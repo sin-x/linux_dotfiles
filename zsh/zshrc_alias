@@ -1,2 +1,3 @@
 alias ll="ls -l"
 alias la="ls -a"
+alias g="gvim"

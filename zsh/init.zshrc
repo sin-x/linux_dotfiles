@@ -1,4 +1,5 @@
 # Antigen: https://github.com/zsh-users/antigen
+PROJ_DIR="$HOME/Project/dotfiles/zsh"
 ANTIGEN="$HOME/.local/bin/antigen.zsh"
 ZSHALIAS="./zshrc_alias"
 
@@ -27,8 +28,8 @@ if [ ! -f "$ANTIGEN" ]; then
 	mv "$TMPFILE" "$ANTIGEN"
 fi
 
-if [ -f "$ZSHALIAS" ]; then
-	source $ZSHALIAS
+if [ -f "$PROJ_DIR/zshrc_alias" ]; then
+	source "$PROJ_DIR/zshrc_alias"
 fi
 
 
